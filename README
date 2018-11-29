@@ -1,0 +1,15 @@
+Packages required : pytorch, torchvision, numpy, matplotlib
+
+- All the models used for bagging are in the "models" folder. The best single model is CNN8.
+- In the "data" folder, there is:
+    - required_data.tar.xz : the train and tes images with the label. NEED TO BE EXTRACTED AT THE ROOT OF THE PROJECT
+
+
+- If training.py is run, this will train CNN8 by default. Two files will be created if left to run completely:
+    - CNN8_submit_best.ckpt : Model with the best test (i.e. valid) accuracy
+    - CNN8_submit_final.ckpt : Model saved when all epoch have been runned
+
+To run the following, this is needed https://drive.google.com/file/d/1Y72o4lG63m4nKN-Yvg7rUz5qSHIUnFav/view?usp=sharing
+    - To be extracted at the root of the code
+- bagging_test is used to get test accuracy with the bagging of 6 models
+- submission is used to generate a submission csv using the bagging of 6 models
